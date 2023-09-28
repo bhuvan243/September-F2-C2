@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        Student Portal
+    </header>
+    <main>
+        <div>
+            <input type="text" id="searchBar" placeholder="Search..." />
+            <button onclick="searchData()">Search</button>
+        </div>
+        <div>
+            <button onclick="sortBy('nameAsc')">Sort A->Z</button>
+            <button onclick="sortBy('nameDesc')">Sort Z->A</button>
+            <button onclick="sortBy('marks')">Sort By Marks</button>
+            <button onclick="sortBy('passing')">Sort By Passing</button>
+            <button onclick="sortBy('class')">Sort By Class</button>
+            <button onclick="sortBy('gender')">Sort By Gender</button>
+        </div>
+        <div>
+            <table id="studentTable">
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table id="maleTable" style="display: none;">
+                <caption>Male Students</caption>
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table id="femaleTable" style="display: none;">
+                <caption>Female Students</caption>
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- add js file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
